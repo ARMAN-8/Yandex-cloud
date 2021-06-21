@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpeechKit</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--swiperJS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="my-2">
+            <h3 class="title-h3">
+                Создание платежного аккаунта
+            </h3>
+        </div>
+        <div class="my-4">
+            <div class="notes-blue p-4">
+                <div class="mr-3">
+                    <i class="fas fa-exclamation-circle link-primary"></i>
+                </div>
+                <p style="margin-left: 10px;">
+                    <b>Примечание</b> <br>
+                    Создайте платёжный аккаунт и получите грант не менее чем на 4000 ₽ сроком действия 60 дней, чтобы
+                    познакомиться с облачными сервисами в рамках пробного периода. Подробнее об условиях использования
+                    гранта читайте в <a href="#" class="link-primary">документации</a>.
+                </p>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="my-4">
+                    <div class="row my-4">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            Страна
+                            <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                               title="Страна, резидентом которой вы являетесь. Все плательщики, привязанные к одному
+                               аккаунту на Яндексе, должны быть с одинаковым резидентством: плательщики должны являться
+                               или резидентами РФ, или нерезидентами РФ."></i>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <select class="form-select form-select-sm">
+                                <option value="" selected disabled hidden>Выберите страну (валюта USD)</option>
+                                <option value="country-value">Австрия</option>
+                                <option value="2">Азербайджан</option>
+                                <option value="3">Армения</option>
+                                <option value="4">Беларусь</option>
+                                <option value="5">Бельгия</option>
+                                <option value="6">Болгария</option>
+                                <option value="7">Великобритания</option>
+                                <option value="8">Германия</option>
+                                <option value="9">Грузия</option>
+                                <option value="10">Дания</option>
+                                <option value="11">Израиль</option>
+                                <option value="12">Казахстан</option>
+                                <option value="13">Россия</option>
+                                <option value="14">США</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <label for="account-name" class="form-label">Имя аккаунта</label>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <input type="text" class="form-control form-control-sm" id="account-name"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            <div>
+                <h5 class="title-h5">
+                    Тип плательщика
+                </h5>
+            </div>
+            <p class="my-2">
+                Юридическое лицо (нерезидент РФ)
+            </p>
+            <div class="my-4">
+                <h5 class="title-h5">
+                    Способ оплаты
+                </h5>
+            </div>
+            <div class="my-4">
+                <ul class="nav nav-pills nav-pills-billing mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item nav-item-billing" role="presentation" style="border-radius: 5px 0 0 5px;">
+                        <a class="nav-link nav-link-billing active" id="pills-home-tab" data-bs-toggle="pill"
+                           href="#pills-home"
+                           role="tab" aria-controls="pills-home" aria-selected="true">Банковская карта</a>
+                    </li>
+                    <li class="nav-item nav-item-billing" role="presentation" style="border-radius: 0 5px 5px 0;">
+                        <a class="nav-link nav-link-billing" id="pills-profile-tab" data-bs-toggle="pill"
+                           href="#pills-profile"
+                           role="tab" aria-controls="pills-profile" aria-selected="false">Банковский перевод</a>
+                    </li>
+                </ul>
+                <div class="my-4">
+                    <div class="notes-blue p-4">
+                        <div class="mr-3">
+                            <i class="fas fa-exclamation-circle link-primary"></i>
+                        </div>
+                        <p style="margin-left: 10px;">
+                            <b>Примечание</b> <br>
+                            Платежный аккаунт будет создан в статусе «Не подтвержден». На вашу почту, указанную в
+                            аккаунте Яндекса или Яндекс.Коннекта, будет отправлено письмо с описанием дальнейших
+                            действий. Активация платежного аккаунта может занять до трех рабочих дней.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <h5 class="title-h5">
+                        Данные плательщицка
+                    </h5>
+                </div>
+                <div class="my-2">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <label for="user-data-0">Краткое название организаций</label>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-sm" id="user-data-0"/>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <label for="user-data-1">Почтовый индекс</label>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-sm" id="user-data-1"/>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <label for="user-data-2">Идентификационный номер налогоплательщика (TIN)</label>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-sm" id="user-data-2"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal-window-->
+                <div class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Привязка карты</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <span>
+                                    Осталось времени
+                                </span>
+                                <button type="button" class="btn btn-light" disabled>Првязать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content tab-content-billing" id="pills-tabContent">
+                    <div class="tab-pane tab-pane-billing fade show active" id="pills-home" role="tabpanel"
+                         aria-labelledby="pills-home-tab">
+                        <div class="my-4"><!--123-->
+                            <h5 class="title-h5">
+                                Банковская карта <i class="fas fa-question-circle"></i>
+                            </h5>
+                            <div class="my-4">
+                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Добавить карту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tab-pane-billing fade" id="pills-profile" role="tabpanel"
+                         aria-labelledby="pills-profile-tab">
+                        <!--456-->
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Привязка карты</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            <button class="btn btn-warning disabled">Активировать</button>
+        </div>
+    </div>
+</main>
+
+<!--scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<script src="js/bootstrap.js"></script>
+<!--swiperJS-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+<script>
+    for countValue(){
+        if (let i = 5;
+        i < 5;
+        i++
+    )
+        {
+            console.log('5+')
+        }
+    else
+        {
+            5 -
+        }
+    }
+
+    let countryValue = {
+        countryValue1: 'Canada',
+        countryValue2: 'USA',
+        countryValue3: 'Russia',
+        countryValue4: 'Australia',
+        countryValue5: 'Kazakhstan',
+        countryValue6: 'Italy',
+
+    }
+</script>
+</body>
+</html>

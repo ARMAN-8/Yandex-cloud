@@ -1,0 +1,390 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h5, h6 {
+    color: rgb(0, 0, 85);
+    font-weight: 500;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    /*color: #00ff;*/
+}
+
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.whiteLink {
+    color: #fff;
+}
+
+.whiteLink:hover {
+    color: #fff;
+}
+
+.textDeckUnderLine {
+    text-decoration: underline;
+}
+
+.tdn {
+    text-decoration: none;
+}
+
+.whiteBtn {
+    color: #000;
+    border-color: #ebebeb;
+    background-color: #fff;
+}
+
+.rec-float-btn {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.whiteBlue {
+    color: #fff;
+    border-color: #fff;
+}
+
+.whiteBlue:hover {
+    color: #fff;
+    background-color: #6ba7ff;
+    border-color: #6ba7ff;
+}
+
+/*a {
+    text-decoration: none;
+}*/
+
+.topMenuLogo {
+    width: 32px;
+    height: 32px;
+}
+
+.serviceName {
+    margin-left: 8px;
+}
+
+.menuBlock {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+
+}
+
+
+.grid .container, .grid .container-fluid {
+    max-width: 1184px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.baseBlock {
+    margin-top: 48px;
+    padding: 0 0 48px;
+    background-image: url(https://storage.yandexcloud.net/cloud-www-assets/constructor/services/speechkit/background_speechkit_2x.png);
+}
+
+.lightBlueGradient {
+    background-color: #D0DDFF;
+}
+
+.socialMedia {
+    margin-right: 20px;
+    color: #ababab;
+    background-color: #ebebeb;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.socialMedia:hover {
+    color: #000;
+}
+
+.footerUL {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLI {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.underFooter {
+    font-size: 14px;
+}
+
+.a-footer {
+    background-color: #5282ff;
+    color: #fff;
+}
+
+/*sliderHere*/
+.swiperCardHeaderImage1 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_5.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage2 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_8.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage3 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_6.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage4 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_12.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage5 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_8.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCard {
+    border-radius: 15px;
+}
+
+/*docs-speechkit.html*/
+.sideBarTitle {
+    font-weight: 400;
+}
+
+.leftSidebarUl {
+    padding-left: 0;
+    /*display: block;*/
+}
+
+.leftSidebarLi {
+    list-style: none;
+}
+
+/*.leftSidebarLi {
+    list-style: none;
+    padding-left: 0.15rem;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.leftSidebarLi:hover {
+    list-style: none;
+    color: #000;
+    background-color: #ebebeb;
+}*/
+
+.leftSidebarLink {
+    color: #000;
+    display: block;
+    list-style: none;
+    line-height: 100%;
+    border-radius: 5px;
+    font-size: 0.8125rem;
+    padding: 0.50rem 1.5rem;
+    letter-spacing: 0.0625rem;
+}
+
+.leftSidebarLink:hover {
+    color: #0d6efd;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.leftSidebarLinkDropDown {
+    color: #000;
+    display: block;
+    list-style: none;
+    line-height: 100%;
+    border-radius: 5px;
+    font-size: 0.8125rem;
+    margin: 0 0.15rem;
+    padding: 0.50rem 0;
+    letter-spacing: 0.0625rem;
+}
+
+.leftSidebarLinkDropDown:hover {
+    color: #000;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.sideBarMenu {
+    /*width: 1rem;
+    height: 54.5625rem;*/
+}
+
+.posFixed {
+    /*position: fixed;*/
+}
+
+.right-chevron-icon {
+    width: 16px;
+    cursor: pointer;
+}
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.down {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.main-links {
+    margin-bottom: 50px;
+}
+
+/*alerts*/
+.own-info-alert {
+    background: rgb(235 245 254);
+    border: rgb(235 245 254);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.alert-under-text {
+    margin-left: 30px;
+}
+
+.footer-breadcrumb-left {
+    text-align: right;
+}
+
+.lang-img {
+    width: 24px;
+    height: 24px;
+}
+
+.sq-outside {
+    list-style: square outside;
+}
+
+.accordion-button {
+    border: 0;
+    font-size: 0.8125rem;
+    background: transparent;
+    padding: 0.50rem 1.5rem;
+    letter-spacing: 0.0625rem;
+    font-weight: normal;
+}
+
+.accordion-button .collapsed {
+    border: 0;
+    font-size: 0.8125rem;
+    background: transparent;
+    padding: 0.50rem 1.5rem;
+    letter-spacing: 0.0625rem;
+}
+
+.menu-accordion-body {
+    margin-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accordion-collapse {
+    border: 0;
+}
+
+.accordion-button-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.code-span {
+    background: #e6e6e6;
+    color: #506875;
+}
+
+.code-grey-bg {
+    background: #dadada;
+    color: #000;
+}
+
+.div-big-grey {
+    background: #dadada;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.notes-blue {
+    background: rgba(2, 123, 243, .08);
+    display: flex;
+    border-radius: 15px;
+}
+
+.notes-yellow {
+    background: rgba(255, 136, 0, .15);
+    display: flex;
+    border-radius: 15px;
+}
+
+.blockquote {
+    border-left: 3px solid #027bf3;
+    padding-left: 12px;
+    position: relative;
+    font-size: 16px;
+}
+
+/*.nav-pills-billing {
+
+}*/
+
+.nav-item-billing {
+    background: #d9d9d9;
+    padding: 3px;
+    color: #000;
+}
+
+.nav-link-billing.active {
+    background: #fff!important;
+    color: #000!important;
+}
+
+/*footer  {
+    background: #ebebeb;
+}*/

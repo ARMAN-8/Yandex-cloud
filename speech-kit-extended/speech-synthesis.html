@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpeechKit</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--swiperJS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <img src="img/navbar-logo.png" alt="" class="img-fluid topMenuLogo">
+            <a class="navbar-brand" href="#">
+                <h5 class="serviceName">
+                    <span>
+                        SpeechKit
+                    </span>
+                </h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav menuBlock ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Решения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Истории успеха</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Вопросы и ответы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Мероприятия</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
+                <div class="div-fixed position-fixed pt-4">
+                    <div class="">
+                        <div class="sideBarMenu">
+                            <div>
+                                <a class="sideBarTitle" href="#">
+                                    <span>Yandex SpeechKit</span>
+                                </a>
+                            </div>
+                            <div class="leftSidebarDiv">
+                                <ul class="leftSidebarUl scrollspy-example">
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Начало работы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Релизы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseOne" aria-expanded="false"
+                                                       aria-controls="collapseOne">
+                                                        Распознавание речи
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>О технологий</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Распознавание <br> коротких аудио</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Распознавание <br> длинных аудио</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Потоковое <br> распознавание</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Форматы аудио</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Модели распознавания</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseTwo" aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+                                                        Синтез речи
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>О технологии</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Описание метода API</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Список голосов</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Использование SSML</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Список поддерживаемых <br> фонем в SSML</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseThree" aria-expanded="false"
+                                                       aria-controls="collapseThree">
+                                                        Использование API
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Аутентификация API</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Формат ответа</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Диагностика ошибок</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Зоны доступности</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Начало работы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Стадии готовности сервисов</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Квоты и лимиты</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>API</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>SLA</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Вопросы и ответы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Удаление данных пользователей</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 MAIN_PAGE pt-5" style="border-left: 1px solid #c4c4c4;">
+                <div class="pt-4" style="padding-left: 50px;">
+                    <div class="mb-4">
+                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"><small>Синтез речи</small>
+                                </li>
+                                <li class="text-black-50 mx-2">/</li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <small>О технологии</small>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="my-4">
+                        <h1 class="title-h1">
+                            <span>Синтез речи</span>
+                        </h1>
+                    </div>
+                    <div class="my-4">
+                        <p>
+                            <i>Синтез речи</i> в сервисе SpeechKit позволяет озвучить любой текст на нескольких языках.
+                            При этом вы можете выбрать голос и управлять параметрами речи.
+                        </p>
+                        <p>
+                            Особенность технологии синтеза в Яндексе — мы не склеиваем фрагменты реальной речи, а
+                            обучаем акустическую модель на речи диктора. Для этого мы используем нейронные сети. Таким
+                            образом для любого текста речь получается плавной, а интонации естественными.
+                        </p>
+                    </div>
+                    <div class="my-4">
+                        <h2 class="title-h2 mt-5 my-2">
+                            <span>Языки</span>
+                        </h2>
+                        <p class="my-2">
+                            Вы можете синтезировать речь на трех языках:
+                        </p>
+                        <ul class="my-2">
+                            <li>
+                                казахский (kz-KZ);
+                            </li>
+                            <li>
+                                английсикй (en-US);
+                            </li>
+                            <li>
+                                русский (ru-RU);
+                            </li>
+                        </ul>
+                        <p class="my-2">
+                            При этом, если выбрать русский язык и синтезировать текст на английском, то он все равно
+                            будет произноситься, но с акцентом. Например,
+                            <a href="#" class="link-primary">попробуйте синтезировать</a> фразу Let me speak
+                            from my heart!, указав русский в настройках языка.
+                        </p>
+                    </div>
+                    <div class="my-4">
+                        <h2 class="title-h2 mt-5 my-2">
+                            <span>Выбор голоса и качество произношения</span>
+                        </h2>
+                        <p class="my-2">
+                            Каждый голос соответствует модели, обученной на речи диктора, поэтому, выбор голоса
+                            определяет тембр голоса, основной язык и пол говорящего, мужской или женский.
+                            <a href="#" class="link-primary">Список доступных голосов.</a>
+                        </p>
+                        <p class="my-2">
+                            Чтобы использовался желаемый голос и было качественное произношение:
+                        </p>
+                        <ul class="my-2">
+                            <li>Указывайте рекомендуемые <a href="#" class="link-primary">настройки произношения.</a>
+                            </li>
+                            <li>Следите за <a href="#" class="link-primary">качеством переданного текста.</a></li>
+                            <li>Попробуйте <a href="#" class="link-primary">премиум-голоса</a>
+                                для сценариев общения с клиентами.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="title-h3 mt-5 my-2">
+                            <span>Настройки произношения</span>
+                        </h3>
+                        <p class="my-2">
+                            Качество произношения и голос зависят от настроек произношения:
+                        </p>
+                        <ul class="my-2">
+                            <li>
+                                <p>
+                                    Язык — каждый голос создавался для определенного языка, на котором разговаривал
+                                    диктор.
+                                    Чтобы получить желаемое качество, используйте тот голос из
+                                    <a href="#" class="link-primary">списка</a>, для которого
+                                    выбранный язык является основным.
+                                </p>
+                            </li>
+                            <p>
+                                Если выбрать не основной язык, то качество произношения будет хуже, а также может
+                                быть использован другой голос, а не тот, который вы указали.
+                            </p>
+                            <li>
+                                <p>
+                                    Скорость — слишком быстрое и слишком медленное произношение звучит неестественно, но
+                                    может быть полезно в рекламе, где каждая секунда эфира стоит дорого.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Эмоциональная окраска — поддерживается только при выборе русского языка (ru-RU) и
+                                    голосов jane или omazh. Не используйте этот параметр с другими голосами и языками,
+                                    так как при синтезе отдельных фраз голос может отличаться от ожидаемого.
+                                </p>
+                            </li>
+                            <p>
+                                Для этих голосов нейронная сеть обучалась на трех разных датасетах с репликами диктора,
+                                в которых фразы произносились с разной интонацией: радостной, раздраженной, нейтральной.
+                                Развивать поддержку эмоций для других голосов сейчас не планируется, а в премиум-голосах
+                                выбор подходящей интонации осуществляется автоматически.
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="title-h3 mt-5 my-2">
+                            <span>Качество переданного текста</span>
+                        </h3>
+                        <p class="my-2">
+                            Причины, по которым при произношении могут быть использованы другие голоса:
+                        </p>
+                        <ul>
+                            <li>
+                                Длинный текст без пунктуации. Для лучшего качества расставляйте точки и запятые.
+                            </li>
+                            <li>Специфичные предложения на сложную тему.</li>
+                            <li>Много вхождений слов из других языков.</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="title-h3 mt-5 my-2">
+                            <span>Премиум-голоса</span>
+                        </h3>
+                        <p class="my-2">
+                            <a href="#" class="link-primary">Некоторые голоса</a>
+                            были обучены с использованием новой технологии. Речь, синтезированная по
+                            новой технологии звучит естественнее.
+                        </p>
+                        <p class="my-2">
+                            Основные отличия:
+                        </p>
+                        <ul class="my-2">
+                            <li>
+                                Понимание контекста. Синтез премиум-голосов перед стартом оценивает весь текст целиком,
+                                а не отдельные предложения. Это позволяет получить значительно более уместные интонации,
+                                присущие речи живого человека.
+                            </li>
+                            <li>
+                                Внимание к деталям. Благодаря использованию глубоких нейронных сетей при синтезе
+                                премиум-голосов, мы обращаем внимание на гораздо большее количество деталей исходного
+                                голоса. Это позволяет получить значительно более чистый и богатый на детали голос и
+                                избежать различных искажений, которые могут быть заметны в
+                                <a href="#" class="link-primary">стандартных голосах.</a>
+                            </li>
+                        </ul>
+                        <div class="my-2">
+                            <div class="notes-yellow p-4">
+                                <div class="mr-3">
+                                    <i class="fas fa-exclamation-circle link-warning"></i>
+                                </div>
+                                <p style="margin-left: 10px;">
+                                    <b>Примечание</b> <br>
+                                    Сейчас для новой технологии есть голоса только для русского языка. Если выбрать
+                                    другой язык, качество произношения будет хуже.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="title-h3 mt-5 my-2">
+                            <span>Поддержка SSML</span>
+                        </h3>
+                        <p class="my-2">
+                            Чтобы получить больше контроля над синтезом речи, вы можете использовать
+                            <a href="#" class="link-primary">Speech Synthesis Markup Language</a>(SSML). Это язык
+                            разметки на основе XML, который позволяет настроить длительность пауз, произношение
+                            отдельных звуков и многое другое. Подробнее о поддерживаемых тегах и их использовании
+                            читайте в разделе <a href="#" class="link-primary">Использование SSML.</a>
+                        </p>
+                    </div>
+
+                    <div class="row my-5">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p>
+                                <span class="text-black-50">Предыдущая</span>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <i class="fas fa-arrow-left"></i> Распознавание длинных аудио
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
+                            <p>
+                                <span class="text-black-50">Следующая</span>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    Форматы аудио <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="pb-4"><!--fixed-bottom-->
+    <div class="container-fluid">
+        <hr style="margin: 0;">
+        <div class="row mt-4">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="underFooter">
+                    <div class="dropdown" style="display: inline-block; margin-right: 15px;">
+                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i> Language
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>Язык</li> <!--Language-->
+                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> Русский
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> English
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block; margin-right: 15px;">
+                        <a href="#" style="text-decoration: none;">
+                            Вакансии
+                        </a>
+                    </div>
+                    <div style="display: inline-block; margin-right: 15px;">
+                        <a href="#" style="text-decoration: none;">
+                            Политика Конфиденциальности
+                        </a>
+                    </div>
+                    <div style="display: inline-block; margin-right: 15px;">
+                        <a href="#" style="text-decoration: none;">
+                            Условия использования
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="text-end text-black-50">
+                    <span class="">
+                        © 2020 TOO «My Cloud»
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<script src="js/bootstrap.js"></script>
+<!--swiperJS-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

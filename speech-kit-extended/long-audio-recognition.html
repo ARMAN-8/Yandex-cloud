@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpeechKit</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--swiperJS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <img src="img/navbar-logo.png" alt="" class="img-fluid topMenuLogo">
+            <a class="navbar-brand" href="#">
+                <h5 class="serviceName">
+                    <span>
+                        SpeechKit
+                    </span>
+                </h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav menuBlock ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Решения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Истории успеха</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Вопросы и ответы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Мероприятия</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
+                <div class="div-fixed position-fixed pt-4">
+                    <div class="">
+                        <div class="sideBarMenu">
+                            <div>
+                                <a class="sideBarTitle" href="#">
+                                    <span>Yandex SpeechKit</span>
+                                </a>
+                            </div>
+                            <div class="leftSidebarDiv">
+                                <ul class="leftSidebarUl scrollspy-example">
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Начало работы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Релизы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseOne" aria-expanded="false"
+                                                       aria-controls="collapseOne">
+                                                        Распознавание речи
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>О технологий</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Распознавание <br> коротких аудио</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Распознавание <br> длинных аудио</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Потоковое <br> распознавание</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Форматы аудио</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Модели распознавания</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseTwo" aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+                                                        Синтез речи
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>О технологии</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Описание метода API</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Список голосов</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Использование SSML</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Список поддерживаемых <br> фонем в SSML</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseThree" aria-expanded="false"
+                                                       aria-controls="collapseThree">
+                                                        Использование API
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Аутентификация API</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Формат ответа</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Диагностика ошибок</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Зоны доступности</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Начало работы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Стадии готовности сервисов</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Квоты и лимиты</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>API</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>SLA</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Вопросы и ответы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Удаление данных пользователей</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 MAIN_PAGE pt-5" style="border-left: 1px solid #c4c4c4;">
+                <div class="pt-4" style="padding-left: 50px;">
+                    <div class="mb-4">
+                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page"><small>Распознавание речи</small>
+                                </li>
+                                <li class="text-black-50 mx-2">/</li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <small>Распознавание длинных аудио</small>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="my-4">
+                        <h1 class="title-h1">
+                            <span>Распознавание длинных аудио</span>
+                        </h1>
+                    </div>
+                    <div class="my-4">
+                        <p>
+                            Распознавание длинных аудио подходит для многоканальных аудиофайлов до 1 ГБ.
+                        </p>
+                    </div>
+                    <div class="my-4">
+                        <p>
+                            Распознавание длинных аудио немного дешевле других
+                            <a href="#" class="link-primary">способов распознавания</a>, однако не
+                            подходит в сценариях распознавания речи онлайн — время ответа больше. Подробнее о стоимости
+                            в разделе <a href="#" class="link-primary">Правила тарификации для SpeechKit.</a>
+                        </p>
+                    </div>
+                    <div class="my-4">
+                        <div class="notes-blue p-4">
+                            <div class="mr-3">
+                                <i class="fas fa-exclamation-circle link-primary"></i>
+                            </div>
+                            <p style="margin-left: 10px;">
+                                <b>Примечание</b> <br>
+                                Сейчас вы можете распознавать длинные аудио только на русском языке.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="title-h3 mt-5 mb-2">
+                            <span>Распознать длинное аудио</span>
+                        </h3>
+                        <p class="my-2">
+                            Чтобы распознать длинное аудио, необходимо выполнить 2 запроса:
+                        </p>
+                        <ol>
+                            <li><a href="#" class="link-primary">Отправить файл на распознавание.</a></li>
+                            <li><a href="#" class="link-primary">Получить результаты распознавания.</a></li>
+                        </ol>
+                        <p class="my-2">
+                            Если вы отправляете файлы с помощью gRPC, дополнительно прочитайте раздел
+                            <a href="#" class="link-primary">Особенности использования gRPC.</a>
+                        </p>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="title-h4 mt-5 mb-2">
+                            <span>Перед началом</span>
+                        </h4>
+                        <ol>
+                            <li>Запрос на распознавание необходимо отправлять от имени
+                                <p>
+                                    <a href="#" class="link-primary">сервисного аккаунта</a>
+                                    с ролью <code class="code-span p-1 rounded-3">editor</code> на каталог, в котором он
+                                    создан.
+                                </p>
+                                <p>
+                                    Если необходимо, воспользуйтесь инструкциями:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="link-primary">Создание сервисного аккаунта</a>.
+                                        В консоли управления вы можете назначить необходимые роли при создании
+                                        сервисного аккаунта.
+                                    </li>
+                                    <li><a href="#" class="link-primary">Просмотр назначенных ролей.</a></li>
+                                    <li><a href="#" class="link-primary">Назначение роли сервисному аккаунту.</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="#" class="link-primary">Получите IAM-токен</a>или
+                                    <a href="#" class="link-primary">API-ключ</a>
+                                    для вашего сервисного аккаунта. В примерах для аутентификации используется
+                                    IAM-токен.
+                                </p>
+                                <p>
+                                    Чтобы использовать API-ключ, передайте его в заголовке <code
+                                        class="code-span p-1 rounded-3">Authorization</code> в
+                                    <следующем></следующем>
+                                    формате:
+                                </p>
+                                <div class="div-big-grey">
+                                    Authorization: Api-Key < API-ключ >
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    Загрузите аудиофайл в сервис Yandex Object Storage и получите ссылку на загруженный
+                                    файл:
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Если у вас еще нет бакета в Object Storage,
+                                            <a href="#" class="link-primary">создайте</a> его.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a href="#" class="link-primary">Загрузите аудиофайл</a>
+                                            в ваш бакет. В терминах Object Storage загружаемые файлы называются
+                                            объектами.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <a href="#" class="link-primary">Получите ссылку</a>
+                                            на загруженный файл. Используйте эту ссылку в запросе на распознавание
+                                            аудио.
+                                        </p>
+                                        <p>
+                                            Ссылка на загруженный файл имеет вид:
+
+
+                                        </p>
+                                        <div class="div-big-grey">
+                                            https://storage.yandexcloud.net/< имя-бакета >/< путь-к-файлу >
+                                        </div>
+                                        <p class="my-2">
+                                            Для бакета с ограниченным доступом в ссылке будут дополнительные
+                                            query-параметры (после знака ?). В SpeechKit эти параметры не надо
+                                            передавать — они игнорируются.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="my-4">
+                        <h3 class="title-h3 mt-5 my-2">
+                            <span>Отправить файл на распознавание</span>
+                        </h3>
+                        <h4 class="title-h4  my-4">
+                            <span>HTTP-запрос</span>
+                        </h4>
+                        <div class="div-big-grey">
+                            POST https://transcribe.api.cloud.yandex.net/speech/stt/v2/longRunningRecognize
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="title-h4  my-4">
+                            <span>Параметры в теле запроса</span>
+                        </h4>
+                        <div class="div-big-grey">
+                            { <br>
+                            "config": {<br>
+                            "specification": {<br>
+                            "languageCode": "string",<br>
+                            "model": "string",<br>
+                            "profanityFilter": "string",<br>
+                            "audioEncoding": "string",<br>
+                            "sampleRateHertz": "integer",<br>
+                            "audioChannelCount": "integer"<br>
+                            }<br>
+                            },<br>
+                            "audio": {<br>
+                            "uri": "string"<br>
+                            }<br>
+                            }
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="title-h4 mt-5">
+                            <span>Получить результаты распознавания</span>
+                        </h4>
+                        <div class="my-2">
+                            <a href="#" class="link-primary">Проверяйте результаты распознавания</a>, используя
+                            полученный идентификатор. Количество запросов
+                            на проверку результатов ограничено, поэтому учитывайте скорость распознавания: 1 минута
+                            одноканального аудио распознается примерно за 10 секунд.
+                        </div>
+                        <div class="my-2">
+                            <div class="notes-yellow p-4">
+                                <div class="mr-3">
+                                    <i class="fas fa-exclamation-circle link-warning"></i>
+                                </div>
+                                <p style="margin-left: 10px;">
+                                    <b>Примечание</b> <br>
+                                    Сейчас вы можете распознавать длинные аудио только на русском языке.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p>
+                                <span class="text-black-50">Предыдущая</span>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <i class="fas fa-arrow-left"></i> О технологии
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
+                            <p>
+                                <span class="text-black-50">Следующая</span>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    Распознавание длинных аудио <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="pb-4"><!--fixed-bottom-->
+    <div class="container-fluid">
+        <hr style="margin: 0;">
+        <div class="row mt-4">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="underFooter">
+                    <div class="dropdown" style="display: inline-block; margin-right: 15px;">
+                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i> Language
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>Язык</li> <!--Language-->
+                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> Русский
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> English
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block; margin-right: 15px;">
+                        <a href="#" style="text-decoration: none;">
+                            Вакансии
+                        </a>
+                    </div>
+                    <div style="display: inline-block; margin-right: 15px;">
+                        <a href="#" style="text-decoration: none;">
+                            Политика Конфиденциальности
+                        </a>
+                    </div>
+                    <div style="display: inline-block; margin-right: 15px;">
+                        <a href="#" style="text-decoration: none;">
+                            Условия использования
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="text-end text-black-50">
+                    <span class="">
+                        © 2020 TOO «My Cloud»
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<script src="js/bootstrap.js"></script>
+<!--swiperJS-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

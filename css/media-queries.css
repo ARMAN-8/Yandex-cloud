@@ -1,0 +1,194 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-page {
+        padding-top: 20%;
+    }
+
+    .platform-img {
+
+    }
+    .for-who {
+        padding-top: 20%;
+        background: #3b82f6;
+    }
+
+    .main-features {
+        padding-top: 20%;
+        background: #3b82f6;
+    }
+
+    .features-3i-vox {
+        padding-top: 20%;
+    }
+
+    .try-it {
+        padding-top: 20%;
+        background: #3b82f6;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main-page {
+        padding: 30px 0 170px;
+        background-image: url('../img/main.png');
+        background-position: 50% 80%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+
+    .platform-img {
+        /*background-image: url('../img/platform.svg');
+        background-position: 0 calc(100% + 2px);
+        padding-bottom: 160px;
+        margin-bottom: -2px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        counter-reset: header;*/
+    }
+    .for-who {
+        /*padding: 100px 0 450px;
+        background-image: url('../img/bgBlue.png');
+        background-position: bottom;
+        background-repeat: no-repeat;*/
+        background: #3b82f6;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .main-features {
+        padding: 500px 0 600px;
+        background-image: url(../img/bgBlueRightWithLines.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .features-3i-vox {
+        padding: 290px 0;
+        margin-top: -340px;
+        background-image: url(../img/bgWhiteWightWithLines.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .try-it {
+        padding: 470px 0;
+        margin-top: -220px;
+        background-image: url(../img/bgBlueRight.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 1568px;
+        text-align: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-page {
+        padding: 30px 0 170px;
+        background-image: url('../img/main.png');
+        background-position: 50% 80%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+
+    .platform-img {
+        /*background-image: url('../img/platform.svg');
+        background-position: 0 calc(100% + 2px);
+        padding-bottom: 160px;
+        margin-bottom: -2px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        counter-reset: header;*/
+    }
+    .for-who {
+        /*padding: 100px 0 450px;
+        background-image: url('../img/bgBlue.png');
+        background-position: bottom;
+        background-repeat: no-repeat;*/
+        background: transparent;
+    }
+
+    .main-features {
+        padding: 500px 0 600px;
+        background-image: url(../img/bgBlueRightWithLines.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .features-3i-vox {
+        padding: 290px 0;
+        margin-top: -340px;
+        background-image: url(../img/bgWhiteWightWithLines.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .try-it {
+        padding: 470px 0;
+        margin-top: -220px;
+        background-image: url(../img/bgBlueRight.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 1568px;
+        text-align: center;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .main-page {
+        padding: 30px 0 170px;
+        background-image: url('../img/main.png');
+        background-position: 95% 80%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+
+    .platform-img {
+        background-image: url('../img/platform.svg');
+        background-position: 0 calc(100% + 2px);
+        padding-bottom: 160px;
+        margin-bottom: -2px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        counter-reset: header;
+    }
+    .for-who {
+        padding: 100px 0 450px;
+        background-image: url('../img/bgBlue.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 1390px;
+    }
+
+    .main-features {
+        padding: 500px 0 600px;
+        background-image: url(../img/bgBlueRightWithLines.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .features-3i-vox {
+        padding: 290px 0;
+        margin-top: -340px;
+        background-image: url(../img/bgWhiteWightWithLines.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .try-it {
+        padding: 470px 0;
+        margin-top: -220px;
+        background-image: url(../img/bgBlueRight.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 1568px;
+        text-align: center;
+    }
+}
