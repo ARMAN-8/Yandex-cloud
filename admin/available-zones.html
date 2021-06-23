@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Зоны доступности</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <nav class="nav-bar bg-white py-4 fixed w-full z-20 border border-b">
+        <div class="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden border border-red-500">
+
+
+                    <!--<button class="mobile-menu-button p-4 focus:outline-none">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>-->
+
+
+                    <!-- Mobile menu button-->
+                    <button type="button" id="mobile-menu-button"
+                            class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    >
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden bg-gray-100">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                            class="mobile-menu-button-top inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu-top" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="#">
+                            <img class="lg:w-40 md:w-36 sm:w-20 w-20  h-auto" src="./img/i3.svg" alt=""/>
+                        </a>
+                        <!--<img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+                        <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">-->
+                    </div>
+                    <div class="hidden sm:block sm:ml-6 w-full">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+                                   aria-current="page">О платформе</a>
+                                <a href="./speech-kit-extended/api.html"
+                                   class="text-base text-gray-500 px-3 py-2 rounded-md text-sm font-medium">API</a>
+                                <a href="./speech-kit-extended/begin.html"
+                                   class="text-base text-gray-500 px-3 py-2 rounded-md text-sm font-medium">Документация</a>
+                            </div>
+                            <div class="flex justify-between items-center space-x-4">
+                                <!--language-switcher-->
+                                <div class="">
+
+                                    <div class="dropdown inline-block relative">
+                                        <button class="">
+                                            <span class="mr-1"><i class="fas fa-globe text-gray-400"></i></span>
+                                        </button>
+                                        <ul class="dropdown-menu absolute hidden rounded-t shadow-xl bg-white block whitespace-no-wrap w-max border">
+                                            <li class="hover:bg-gray-100 py-2 px-4">
+                                                <div class="">
+                                                    <div class="flex justify-between space-x-6">
+                                                        <div>
+                                                            <img src="../img/icon/ru.png" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div>Россия</div>
+                                                            <div class="text-gray-400">Русский</div>
+                                                        </div>
+                                                        <div>
+                                                            <i class="fas fa-check text-blue-400"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="hover:bg-gray-100 py-2 px-4">
+                                                <div class="">
+                                                    <div class="flex justify-between space-x-6">
+                                                        <div>
+                                                            <img src="../img/icon/kz.png" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div>Казахстан</div>
+                                                            <div class="text-gray-400">Русский</div>
+                                                        </div>
+                                                        <div>
+                                                            <!--<i class="fas fa-check text-blue-400"></i>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="hover:bg-gray-100 py-2 px-4">
+                                                <div class="">
+                                                    <div class="flex justify-between space-x-6">
+                                                        <div>
+                                                            <img src="../img/icon/en.png" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div>Английский</div>
+                                                            <div class="text-gray-400">Английский</div>
+                                                        </div>
+                                                        <div>
+                                                            <!--<i class="fas fa-check text-blue-400"></i>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!--search-->
+                                <div>
+                                    <label>
+                                        <input type="search"
+                                               class="mr-2 border lg:px-4 lg:py-2 md:px-4 md:py-1 sm:py-1 sm:px-2 rounded-md"
+                                               placeholder="Поиск">
+                                        <!--<i class="fas fa-search text-gray-400"></i>-->
+                                    </label>
+                                </div>
+                                <div>
+                                    <a href="./register.html"
+                                       class="border lg:px-4 lg:py-2 md:px-4 md:py-1 sm:py-1 sm:px-2 rounded-md bg-blue-500 hover:bg-blue-600">
+                                        <span class="text-white text-base">Подключиться</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden sm:hidden mobile-menu-top text-center" id="mobile-menu-top">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="text-blue-500 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
+                    О платформе
+                </a>
+                <a href="#"
+                   class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    API
+                </a>
+                <a href="#"
+                   class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Документация
+                </a>
+            </div>
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="./login.html" class="border px-4 py-1 rounded-md border-blue-500">
+                    <span class="text-blue-500 text-base">Войти</span>
+                </a>
+                <a href="./register.html" class="border px-4 py-1 rounded-md bg-blue-500 hover:bg-blue-600">
+                    <span class="text-white text-base">Регистрация</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="flex">
+    <div>
+        <div class="fixed flex min-h-screen">
+            <!--sidebar-->
+            <div id="sidebar"
+                 class="sidebar bg-white side-nav text-black w-72 space-y-6 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out border-r">
+                <!--mobile close button-times-->
+                <div class="flex justify-end mx-2 md:hidden lg:hidden">
+                    <button id="mobile-menu-close" class="mobile-menu-button focus:outline-none">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <!--logo-->
+                <div class="flex items-center justify-center pt-2 pb-8">
+                    <a href="/"><img src="/dist/img/INTERN-TEST.png" alt=""></a>
+                </div>
+                <!--nav-->
+                <nav class="mt-12">
+                    <div class="lg:ml-12 md:ml-8 ml-4">
+                        <div class="pt-4">
+                            <a href="#" class="font-medium">
+                                Обзор платформы
+                            </a>
+                        </div>
+                        <ul class="">
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="#" class="px-4 py-1">
+                                    Сервисы Yandex Cloud
+                                </a>
+                            </li>
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="#" class="px-4 py-1 bg-blue-50 rounded-md">
+                                    Зоны доступности
+                                </a>
+                            </li>
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="./beginning-of-work.html" class="px-4 py-1">
+                                    Начало работы
+                                </a>
+                            </li>
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="#" class="px-4 py-1">
+                                    Квоты и лимиты
+                                </a>
+                            </li>
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="#" class="px-4 py-1">
+                                    API
+                                </a>
+                            </li>
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="#" class="px-4 py-1">
+                                    SLA
+                                </a>
+                            </li>
+                            <li class="flex items-center w-max ml-0 m-4">
+                                <a href="#" class="px-4 py-1">
+                                    Вопросы и ответы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="w-full">
+        <div class="lg:ml-72 md:ml-72 px-4 lg:px-10 py-6 mt-32">
+            <!--container-->
+            <div class="max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="space-y-6">
+                    <div class="space-y-6">
+                        <!--main header-->
+                        <div class="text-2xl font-bold">
+                            Зоны доступности
+                        </div>
+                        <div class="space-y-6">
+                            <p class="flex items-center space-x-2">
+                                <span>Статья создана</span>
+                                <img src="https://storage.yandexcloud.net/cloud-www-assets/constructor/content-program/icons/yandexcloud.svg"
+                                     alt=""/>
+                                <span>Yandex.Cloud</span>
+                            </p>
+                            <p>
+                                Платформа Yandex.Cloud на первом этапе размещается в трех дата-центрах Яндекса,
+                                расположенных во Владимирской, Рязанской и Московской областях. Инфраструктура
+                                Yandex.Cloud в каждом из дата-центров называется зоной доступности. Каждая зона
+                                изолирована от аппаратных и программных сбоев в других зонах доступности. Разворачивая
+                                ваши приложения сразу в нескольких зонах, вы обеспечите отказоустойчивость своих
+                                приложений и значительно снизите вероятность потери данных.
+                            </p>
+                            <p>
+                                Вы можете размещать свои ресурсы в следующих зонах доступности:
+                            </p>
+                        </div>
+                        <div class="py-4 px-6 bg-blue-100 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div><i class="fas fa-exclamation-circle text-blue-500"></i></div>
+                                <div class="font-bold text-base ml-2">
+                                    Примечание
+                                </div>
+                            </div>
+                            <div class="ml-6">Когда появляются новые зоны доступности или изменяется расположение
+                                старых, Yandex.Cloud уведомляет об этом всех клиентов.
+                            </div>
+                            <div>
+                                Ресурсы в Yandex.Cloud делятся на зональные (привязанные к зоне доступности), и
+                                глобальные (не привязанные к зоне).
+                            </div>
+                            <div>
+                                Зональными ресурсами являются, например, виртуальная машина и диск. Примеры глобальных
+                                ресурсов — облачная сеть и бакет.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 gap-12 mt-20">
+                    <div class="grid-1 flex justify-start">
+                        <div class="text-center">
+                            <div class="text-gray-400">Предыдущая</div>
+                            <div class="font-semibold block">
+                                <a href="./services-yandex-cloud.html" class="text-black hover:text-blue-500">
+                                    <i class="fas fa-long-arrow-alt-left"></i> Сервисы Yandex.Cloud</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-2 flex justify-end">
+                        <div class="text-center">
+                            <div class="text-gray-400">Следующая</div>
+                            <div class="font-semibold block">
+                                <a href="./beginning-of-work.html" class="text-black hover:text-blue-500">Начало работы
+                                    <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
