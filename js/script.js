@@ -4,9 +4,9 @@
 
 // grab everything we need
 
-const btn = document.querySelector('button.mobile-menu-button');
-const menu = document.querySelector('.mobile-menu');
+const landingMobileBtn = document.querySelector('button.landing-mobile-menu-button');
+const landingMobileMenu = document.querySelector('.landing-mobile-menu');
 
-btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+landingMobileBtn.addEventListener('click', () => {
+    landingMobileMenu.classList.toggle('hidden');
 });
